@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69.1.1", "wheel>=0.42.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LawRAG"
+version = "0.1.0"
+description = "公益法律援助向导系统"
+dependencies = [
+  "streamlit==1.38.0",
+  "langchain==0.2.7",
+  "faiss-cpu==1.8.0",
+  "zhipuai==2.1.5.20250825",
+  "python-dotenv==1.2.1"
+]
+requires-python = ">=3.8,<3.11"
+
+[tool.setuptools]
+packages = ["LawRAG"]
+package-dir = {"LawRAG" = "."}
+include-package-data = false
